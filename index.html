@@ -6,28 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./img/favicon-32x32.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Stats preview card component</title>
 </head>
 
 <body>
-    <main class="card">
-       <div class="card__box-left">
-            <p class="card__heading">Get <span class="card__heading card__heading--purple">insights</span>that help your business grow.</p>
-            <p>Discover the benefits of data anlytics and mak better decisions regarding revenue, customer experience, and overall effeciency.</p>
-            <div class="card__stats">
-                <p>10k+</p>
-                <p>314</p>
-                <p>12M+</p>
+    <div class="card">
+
+        <div class="info">
+            <p class="info__text">Get <span class="info__text info__text--purple">insights</span> that
+                help your business grow.</p>
+            <p class="info__smaler-text">Discover the benefits of data anlytics and make better decisions regarding
+                revenue,
+                customer
+                experience, and overall effeciency.</p>
+            <div class="stats">
+                <p class="stats__item">10k+</p>
+                <p class="stats__item">314</p>
+                <p class="stats__item">12M+</p>
             </div>
-       </div>
-       <div class="card__box-right">
-           <img src="/img/image-header-desktop.jpg" alt="">
-       </div>
-    </main>
+            <div class="companies">
+                <p class="companies__child">Companies</p>
+                <p class="companies__child">Templates</p>
+                <p class="companies__child">Queries</p>
+            </div>
+        </div>
+
+
+
+        <img class="image" src="/img/image-header-desktop.jpg" alt="People by table">
+        <div class="shadow"></div>
+    </div>
 </body>
 
 </html>
