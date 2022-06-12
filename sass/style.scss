@@ -27,56 +27,49 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 2em 6em;
-    height: 100%;
+    // padding: 2em 5em;
+   
+    
 
     &__text {
       color: $white-color;
       font-weight: bold;
       font-size: 4rem;
+      padding: 0 1.5em;
 
       &--purple {
+        padding: 0;
         color: $insights-color;
       }
     }
     &__smaler-text {
       color: $gray-text;
       font-size: 1.8rem;
-      padding: 2em 0;
-      margin-right: 4em;
+      padding: 2em 3.6em;
+      
     }
   }
   .stats {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    color: $white-color;
-    width: 100%;
-    margin-top: 3em;
-
+    justify-content: flex-start;
+    margin: 3em;
     &__item {
+      margin-right: 3em;
+      color: $white-color;
       font-size: 2.5rem;
       font-weight: bold;
-      margin-right: 3.5em;
+      
     }
   }
   .companies {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 1em 0;
+    padding: .5em 0;
     color: $gray-text;
-    width: 100%;
-    text-align: left;
-
-    &__child {
-      text-transform: uppercase;
-      font-size: 1.4rem;
-      font-weight: bold;
-      margin-right: 6em;
-    }
+    font-size: 1.4rem;
+   
   }
-
   .image{
     filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-130deg) saturate(600%) contrast(0.8);
   }
