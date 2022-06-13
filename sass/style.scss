@@ -28,8 +28,6 @@ body {
     align-items: center;
     flex-direction: column;
     // padding: 2em 5em;
-   
-    
 
     &__text {
       color: $white-color;
@@ -46,7 +44,6 @@ body {
       color: $gray-text;
       font-size: 1.8rem;
       padding: 2em 3.6em;
-      
     }
   }
   .stats {
@@ -55,24 +52,72 @@ body {
     justify-content: flex-start;
     margin: 3em;
     &__item {
-      margin-right: 3em;
+      margin-right: 2.6em;
       color: $white-color;
       font-size: 2.5rem;
       font-weight: bold;
-      
     }
   }
   .companies {
     display: flex;
     flex-direction: row;
-    padding: .5em 0;
+    padding: 0.3em 0;
     color: $gray-text;
     font-size: 1.4rem;
-   
+    text-transform: uppercase;
   }
-  .image{
-    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-130deg) saturate(600%) contrast(0.8);
+  .image {
+    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-130deg)
+      saturate(600%) contrast(0.8);
   }
- 
-  }
+}
 
+@media (min-width: 200px) and (max-width: 1100px) {
+  .card {
+    flex-direction: column-reverse;
+    height: 660px;
+    width: 280px;
+    overflow: hidden;
+
+    .image {
+      width: 100%;
+    }
+
+    .info {
+      &__text {
+        text-align: center;
+        margin: 1em 0;
+        font-size: 2.2rem;
+      }
+      &__smaler-text {
+        text-align: center;
+        padding: 0;
+        width: 80%;
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+      .stats {
+        flex-direction: column;
+        text-align: center;
+
+        &__item {
+          margin: 0;
+          padding: 0.5em 0;
+          text-align: center;
+          font-size: 2rem;
+        }
+
+        .companies {
+          display: flex;
+          justify-content: center;
+          padding: 0.5em 0;
+          margin: 0;
+          font-size: 1.1rem;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 476px) and (min-height: 800px) {
+}
